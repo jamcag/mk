@@ -9,7 +9,7 @@ int main(int argc, char** argv) {
     }
     const char* name = argv[1];
 
-    std::string command = "g++ -std=c++20 ";
+    std::string command = "g++ -Wall -fsanitize=address -std=c++20 ";
     command += name;
     command += ".cpp ";
     command += "-o ";
